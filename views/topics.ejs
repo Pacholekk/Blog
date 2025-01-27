@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= topic %></title>
+    <link rel="stylesheet" href="styles/post.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="form-container">
+        <div class="input-container">
+            <h1 style="margin-left: 10px;"><%= topic %></h1>
+            <p style="margin-left: 10px;"><%= content %></p>
+          
+          
+                
+            <form action="/delete/<%= filename %>" method="POST" onsubmit="return confirm('Are you sure you want to delete this post?');">
+                <button type="submit" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                <a href="/edit/<%= filename %>" class="btn btn-primary">Edit Post</a>
+                
+            </form>
+          
+           
+            
+        </div>
+
+
+</body>
+</html>
+
+
+
+

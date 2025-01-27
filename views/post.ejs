@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Input Form</title>
+<link rel="stylesheet" href="styles/post.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <form action="/Post" method="POST">
+        <div class="form-container">
+            <div class="input-container">
+                <label for="topic">Blog Topic (max 100 characters):</label>
+                <input type="text" id="topic" name="topic" maxlength="100" placeholder="Enter the blog topic">
+            </div>
+
+            <div class="input-container">
+                <label for="content">Blog Content (max 1000 characters):</label>
+                <textarea id="content" name="content" maxlength="1000" placeholder="Write your blog content here..."></textarea>
+            
+            </div>
+            <button type="save" class="btn btn-success">Save</button>
+        </div>
+    </form>     
+</body>
+    
+    
+</body>
+</html>
