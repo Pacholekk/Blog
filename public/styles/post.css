@@ -1,0 +1,28 @@
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+input, textarea {
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 4px; 
+}
+
+textarea {
+    height: 500px; 
+}
+ .btn {
+    max-width: 100px;
+    justify-self: end;
+ }
